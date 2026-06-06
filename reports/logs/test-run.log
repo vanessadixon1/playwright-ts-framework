@@ -732,3 +732,128 @@
 [2026-06-06 07:30:13] [INFO] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
 [2026-06-06 07:30:13] [INFO] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
 [2026-06-06 07:30:13] [INFO] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+[2026-06-06 08:18:37] [INFO] Setting up authenticated session
+[2026-06-06 08:18:37] [INFO] Setting up authenticated session
+[2026-06-06 08:18:37] [INFO] Setting up authenticated session
+[2026-06-06 08:18:37] [INFO] Setting up authenticated session
+[2026-06-06 08:18:37] [INFO] Navigating to: /
+[2026-06-06 08:18:37] [INFO] Navigating to: /
+[2026-06-06 08:18:37] [INFO] Navigating to: /
+[2026-06-06 08:18:37] [INFO] Navigating to: /
+[2026-06-06 08:18:38] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:38] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:38] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:38] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:38] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:38] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:38] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:18:38] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:18:38] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:38] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:18:38] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:18:38] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:18:38] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:38] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:18:38] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:18:38] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:18:39] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:39] [INFO] Setting up authenticated session
+[2026-06-06 08:18:39] [INFO] Navigating to: /
+[2026-06-06 08:18:39] [INFO] Setting up authenticated session
+[2026-06-06 08:18:39] [INFO] Setting up authenticated session
+[2026-06-06 08:18:39] [INFO] Navigating to: /
+[2026-06-06 08:18:39] [INFO] Navigating to: /
+[2026-06-06 08:18:39] [INFO] Setting up authenticated session
+[2026-06-06 08:18:39] [INFO] Navigating to: /
+[2026-06-06 08:18:40] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:40] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:40] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:40] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:40] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:40] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:40] [INFO] Sorting products by: az
+[2026-06-06 08:18:40] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:40] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:40] [INFO] Sorting products by: lohi
+[2026-06-06 08:18:40] [INFO] Sorting products by: hilo
+[2026-06-06 08:18:41] [INFO] Setting up authenticated session
+[2026-06-06 08:18:41] [INFO] Navigating to: /
+[2026-06-06 08:18:41] [INFO] Setting up authenticated session
+[2026-06-06 08:18:41] [INFO] Navigating to: /
+[2026-06-06 08:18:41] [INFO] Setting up authenticated session
+[2026-06-06 08:18:41] [INFO] Setting up authenticated session
+[2026-06-06 08:18:41] [INFO] Navigating to: /
+[2026-06-06 08:18:41] [INFO] Navigating to: /
+[2026-06-06 08:18:41] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:41] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:41] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:41] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:41] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:42] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:18:42] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:42] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:18:42] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:42] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:18:42] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:42] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:18:42] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:18:42] [INFO] Removing from cart: Sauce Labs Backpack
+[2026-06-06 08:18:42] [INFO] Setting up authenticated session
+[2026-06-06 08:18:42] [INFO] Navigating to: /
+[2026-06-06 08:18:43] [INFO] Navigating to: /
+[2026-06-06 08:18:43] [INFO] Navigating to: /
+[2026-06-06 08:18:43] [INFO] Navigating to: /
+[2026-06-06 08:18:43] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:43] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:43] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:43] [INFO] Logging in as: locked_out_user
+[2026-06-06 08:18:44] [INFO] Error message verified: Epic sadface: Sorry, this user has been locked out
+[2026-06-06 08:18:44] [INFO] Confirmed on inventory page
+[2026-06-06 08:18:44] [INFO] Navigating to: /
+[2026-06-06 08:18:44] [INFO] Navigating to: /
+[2026-06-06 08:18:44] [INFO] Logged out successfully
+[2026-06-06 08:18:44] [INFO] Navigating to: /
+[2026-06-06 08:18:44] [INFO] Logging in as: invalid_user
+[2026-06-06 08:18:45] [INFO] Error message verified: Epic sadface: Username and password do not match
+[2026-06-06 08:18:45] [INFO] Logging in as: 
+[2026-06-06 08:18:45] [INFO] Logging in as: standard_user
+[2026-06-06 08:18:45] [INFO] Error message verified: Epic sadface: Username is required
+[2026-06-06 08:18:45] [INFO] Error message verified: Epic sadface: Password is required
+[2026-06-06 08:18:53] [INFO] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 08:18:53] [INFO] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 08:18:53] [INFO] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 08:18:53] [INFO] POST https://dummyjson.com/auth/login — body: {"username":"nonexistent_user","password":"wrong_password"}
+[2026-06-06 08:18:53] [INFO] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+[2026-06-06 08:18:53] [INFO] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+[2026-06-06 08:18:53] [INFO] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 08:18:53] [INFO] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 08:18:54] [INFO] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+[2026-06-06 08:18:54] [INFO] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+[2026-06-06 08:18:54] [INFO] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass","expiresInMins":60}
+[2026-06-06 08:18:54] [INFO] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+[2026-06-06 08:18:54] [INFO] Response [400]: {"message":"Invalid credentials"}
+[2026-06-06 08:18:54] [INFO] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+[2026-06-06 08:18:55] [INFO] GET https://dummyjson.com/users/0
+[2026-06-06 08:18:55] [INFO] GET https://dummyjson.com/users
+[2026-06-06 08:18:55] [INFO] GET https://dummyjson.com/users
+[2026-06-06 08:18:55] [INFO] GET https://dummyjson.com/users
+[2026-06-06 08:18:55] [INFO] GET https://dummyjson.com/users/1
+[2026-06-06 08:18:55] [INFO] Response [404]: {"message":"User with id '0' not found"}
+[2026-06-06 08:18:55] [INFO] GET https://dummyjson.com/users/search
+[2026-06-06 08:18:55] [INFO] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+[2026-06-06 08:18:55] [INFO] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
+[2026-06-06 08:18:55] [INFO] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+[2026-06-06 08:18:55] [INFO] POST https://dummyjson.com/users/add — body: {"firstName":"Thomas","lastName":"Frami"}
+[2026-06-06 08:18:55] [INFO] PUT https://dummyjson.com/users/1
+[2026-06-06 08:18:55] [INFO] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+[2026-06-06 08:18:55] [INFO] PATCH https://dummyjson.com/users/1
+[2026-06-06 08:18:55] [INFO] Response [201]: {"id":209,"firstName":"Thomas","lastName":"Frami","maidenName":"","age":null,"gender":"","email":"","phone":"","username":"","password":"","birthDate":"","image":"","bloodGroup":"","height":null,"weig
+[2026-06-06 08:18:55] [INFO] Response [200]: {"id":1,"firstName":"Updated","lastName":"Testuser","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"e
+[2026-06-06 08:18:55] [INFO] DELETE https://dummyjson.com/users/1
+[2026-06-06 08:18:55] [INFO] GET https://dummyjson.com/users/1
+[2026-06-06 08:18:55] [INFO] Response [200]: {"id":1,"firstName":"Patched","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"em
+[2026-06-06 08:18:55] [INFO] GET https://dummyjson.com/users
+[2026-06-06 08:18:55] [INFO] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
+[2026-06-06 08:18:55] [INFO] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
+[2026-06-06 08:18:55] [INFO] Response [200]: {"users":[{"id":6,"firstName":"Olivia","lastName":"Wilson","maidenName":"","age":23,"gender":"female","email":"olivia.wilson@x.dummyjson.com","phone":"+91 607-295-6448","username":"oliviaw","password"
+[2026-06-06 08:18:55] [INFO] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
