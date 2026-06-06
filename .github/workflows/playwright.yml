@@ -6,18 +6,6 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      test_suite:
-        description: 'Test suite to run'
-        required: false
-        default: 'all'
-        type: choice
-        options:
-          - all
-          - ui
-          - api
-          - smoke
-          - regression
 
 permissions:
   contents: write
@@ -30,12 +18,12 @@ env:
 
 jobs:
   test:
-    name: ${{ matrix.project }} tests
+    name: ${{ matrix.suite }} tests
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        project: [chromium, firefox, webkit, api]
+        suite: [ui, api]
 
     steps:
       - name: Checkout code
@@ -51,21 +39,21 @@ jobs:
         run: npm ci
 
       - name: Install Playwright browsers
-        run: npx playwright install --with-deps ${{ matrix.project == 'api' && 'chromium' || matrix.project }}
+        run: npx playwright install --with-deps ${{ matrix.suite == 'ui' && 'chromium firefox webkit' || 'chromium' }}
+
+      - name: Run UI tests
+        if: matrix.suite == 'ui'
+        run: npx playwright test tests/ui/ --project=chromium --project=firefox --project=webkit
 
       - name: Run API tests
-        if: matrix.project == 'api'
-        run: npx playwright test --project=api
-
-      - name: Run UI tests (${{ matrix.project }})
-        if: matrix.project != 'api'
-        run: npx playwright test --project=${{ matrix.project }} tests/ui/
+        if: matrix.suite == 'api'
+        run: npx playwright test tests/api/ --project=api
 
       - name: Upload Allure results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-${{ matrix.project }}
+          name: allure-results-${{ matrix.suite }}
           path: reports/allure-results/
           retention-days: 1
 
@@ -73,7 +61,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-report-${{ matrix.project }}
+          name: playwright-report-${{ matrix.suite }}
           path: |
             reports/playwright-report/
             reports/test-results.json
@@ -116,46 +104,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: reports/allure-report
-
-  smoke:
-    name: Smoke tests
-    runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch' && github.event.inputs.test_suite == 'smoke'
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
-
-      - name: Run smoke tests
-        run: npm run test:smoke
-
-      - name: Upload Allure results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-results-smoke
-          path: reports/allure-results/
-          retention-days: 1
-
-      - name: Upload smoke test report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: smoke-report
-          path: |
-            reports/playwright-report/
-            reports/test-results.json
-            reports/junit-results.xml
-          retention-days: 7

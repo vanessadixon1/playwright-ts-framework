@@ -857,3 +857,251 @@
 [2026-06-06 08:18:55] [INFO] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
 [2026-06-06 08:18:55] [INFO] Response [200]: {"users":[{"id":6,"firstName":"Olivia","lastName":"Wilson","maidenName":"","age":23,"gender":"female","email":"olivia.wilson@x.dummyjson.com","phone":"+91 607-295-6448","username":"oliviaw","password"
 [2026-06-06 08:18:55] [INFO] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+[2026-06-06 08:34:20] [INFO] Setting up authenticated session
+[2026-06-06 08:34:20] [INFO] Setting up authenticated session
+[2026-06-06 08:34:20] [INFO] Setting up authenticated session
+[2026-06-06 08:34:20] [INFO] Setting up authenticated session
+[2026-06-06 08:34:20] [INFO] Navigating to: /
+[2026-06-06 08:34:20] [INFO] Navigating to: /
+[2026-06-06 08:34:20] [INFO] Navigating to: /
+[2026-06-06 08:34:20] [INFO] Navigating to: /
+[2026-06-06 08:34:20] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:20] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:20] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:20] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:21] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:21] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:21] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:21] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:21] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:21] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:21] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:21] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:21] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:21] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:21] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:21] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:21] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:22] [INFO] Setting up authenticated session
+[2026-06-06 08:34:22] [INFO] Navigating to: /
+[2026-06-06 08:34:22] [INFO] Setting up authenticated session
+[2026-06-06 08:34:22] [INFO] Navigating to: /
+[2026-06-06 08:34:22] [INFO] Setting up authenticated session
+[2026-06-06 08:34:22] [INFO] Navigating to: /
+[2026-06-06 08:34:22] [INFO] Setting up authenticated session
+[2026-06-06 08:34:22] [INFO] Navigating to: /
+[2026-06-06 08:34:22] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:22] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:22] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:23] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:23] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:23] [INFO] Sorting products by: az
+[2026-06-06 08:34:23] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:23] [INFO] Sorting products by: lohi
+[2026-06-06 08:34:23] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:23] [INFO] Sorting products by: hilo
+[2026-06-06 08:34:23] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:24] [INFO] Setting up authenticated session
+[2026-06-06 08:34:24] [INFO] Setting up authenticated session
+[2026-06-06 08:34:24] [INFO] Navigating to: /
+[2026-06-06 08:34:24] [INFO] Setting up authenticated session
+[2026-06-06 08:34:24] [INFO] Navigating to: /
+[2026-06-06 08:34:24] [INFO] Navigating to: /
+[2026-06-06 08:34:24] [INFO] Setting up authenticated session
+[2026-06-06 08:34:24] [INFO] Navigating to: /
+[2026-06-06 08:34:24] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:24] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:24] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:24] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:24] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:24] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:25] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:25] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:25] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:25] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:25] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:25] [INFO] Removing from cart: Sauce Labs Backpack
+[2026-06-06 08:34:25] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:25] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:25] [INFO] Setting up authenticated session
+[2026-06-06 08:34:25] [INFO] Navigating to: /
+[2026-06-06 08:34:25] [INFO] Navigating to: /
+[2026-06-06 08:34:25] [INFO] Navigating to: /
+[2026-06-06 08:34:26] [INFO] Navigating to: /
+[2026-06-06 08:34:26] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:26] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:26] [INFO] Logging in as: locked_out_user
+[2026-06-06 08:34:26] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:27] [INFO] Error message verified: Epic sadface: Sorry, this user has been locked out
+[2026-06-06 08:34:27] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:27] [INFO] Navigating to: /
+[2026-06-06 08:34:27] [INFO] Navigating to: /
+[2026-06-06 08:34:27] [INFO] Navigating to: /
+[2026-06-06 08:34:27] [INFO] Logged out successfully
+[2026-06-06 08:34:28] [INFO] Logging in as: invalid_user
+[2026-06-06 08:34:28] [INFO] Error message verified: Epic sadface: Username and password do not match
+[2026-06-06 08:34:28] [INFO] Logging in as: 
+[2026-06-06 08:34:28] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:28] [INFO] Error message verified: Epic sadface: Username is required
+[2026-06-06 08:34:28] [INFO] Error message verified: Epic sadface: Password is required
+[2026-06-06 08:34:32] [INFO] Setting up authenticated session
+[2026-06-06 08:34:32] [INFO] Navigating to: /
+[2026-06-06 08:34:33] [INFO] Setting up authenticated session
+[2026-06-06 08:34:33] [INFO] Navigating to: /
+[2026-06-06 08:34:34] [INFO] Setting up authenticated session
+[2026-06-06 08:34:34] [INFO] Navigating to: /
+[2026-06-06 08:34:34] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:34] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:35] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:35] [INFO] Setting up authenticated session
+[2026-06-06 08:34:35] [INFO] Navigating to: /
+[2026-06-06 08:34:35] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:35] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:35] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:35] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:36] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:36] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:36] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:36] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:36] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:36] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:37] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:37] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:37] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:37] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:37] [INFO] Setting up authenticated session
+[2026-06-06 08:34:37] [INFO] Navigating to: /
+[2026-06-06 08:34:37] [INFO] Setting up authenticated session
+[2026-06-06 08:34:37] [INFO] Navigating to: /
+[2026-06-06 08:34:37] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:37] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:38] [INFO] Setting up authenticated session
+[2026-06-06 08:34:38] [INFO] Navigating to: /
+[2026-06-06 08:34:38] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:38] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:38] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:38] [INFO] Sorting products by: az
+[2026-06-06 08:34:39] [INFO] Setting up authenticated session
+[2026-06-06 08:34:39] [INFO] Navigating to: /
+[2026-06-06 08:34:39] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:39] [INFO] Sorting products by: lohi
+[2026-06-06 08:34:39] [INFO] Setting up authenticated session
+[2026-06-06 08:34:39] [INFO] Navigating to: /
+[2026-06-06 08:34:39] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:40] [INFO] Setting up authenticated session
+[2026-06-06 08:34:40] [INFO] Navigating to: /
+[2026-06-06 08:34:40] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:40] [INFO] Setting up authenticated session
+[2026-06-06 08:34:40] [INFO] Navigating to: /
+[2026-06-06 08:34:41] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:41] [INFO] Sorting products by: hilo
+[2026-06-06 08:34:41] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:41] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:41] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:41] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:42] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:42] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:42] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:42] [INFO] Setting up authenticated session
+[2026-06-06 08:34:42] [INFO] Navigating to: /
+[2026-06-06 08:34:42] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:42] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:42] [INFO] Setting up authenticated session
+[2026-06-06 08:34:42] [INFO] Navigating to: /
+[2026-06-06 08:34:42] [INFO] Removing from cart: Sauce Labs Backpack
+[2026-06-06 08:34:43] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:43] [INFO] Navigating to: /
+[2026-06-06 08:34:43] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:43] [INFO] Navigating to: /
+[2026-06-06 08:34:43] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:43] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:44] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:44] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:45] [INFO] Navigating to: /
+[2026-06-06 08:34:45] [INFO] Navigating to: /
+[2026-06-06 08:34:45] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:46] [INFO] Logged out successfully
+[2026-06-06 08:34:46] [INFO] Logging in as: invalid_user
+[2026-06-06 08:34:46] [INFO] Logging in as: locked_out_user
+[2026-06-06 08:34:46] [INFO] Navigating to: /
+[2026-06-06 08:34:46] [INFO] Error message verified: Epic sadface: Username and password do not match
+[2026-06-06 08:34:46] [INFO] Error message verified: Epic sadface: Sorry, this user has been locked out
+[2026-06-06 08:34:46] [INFO] Navigating to: /
+[2026-06-06 08:34:47] [INFO] Logging in as: 
+[2026-06-06 08:34:47] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:47] [INFO] Error message verified: Epic sadface: Username is required
+[2026-06-06 08:34:47] [INFO] Error message verified: Epic sadface: Password is required
+[2026-06-06 08:34:51] [INFO] Setting up authenticated session
+[2026-06-06 08:34:51] [INFO] Navigating to: /
+[2026-06-06 08:34:51] [INFO] Setting up authenticated session
+[2026-06-06 08:34:51] [INFO] Setting up authenticated session
+[2026-06-06 08:34:51] [INFO] Setting up authenticated session
+[2026-06-06 08:34:51] [INFO] Navigating to: /
+[2026-06-06 08:34:51] [INFO] Navigating to: /
+[2026-06-06 08:34:51] [INFO] Navigating to: /
+[2026-06-06 08:34:51] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:51] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:51] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:51] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:52] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:52] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:52] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:52] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:52] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:52] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:52] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:52] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:52] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:52] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:52] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:52] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:52] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:53] [INFO] Setting up authenticated session
+[2026-06-06 08:34:53] [INFO] Navigating to: /
+[2026-06-06 08:34:53] [INFO] Setting up authenticated session
+[2026-06-06 08:34:53] [INFO] Navigating to: /
+[2026-06-06 08:34:53] [INFO] Setting up authenticated session
+[2026-06-06 08:34:53] [INFO] Navigating to: /
+[2026-06-06 08:34:53] [INFO] Setting up authenticated session
+[2026-06-06 08:34:53] [INFO] Navigating to: /
+[2026-06-06 08:34:53] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:53] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:53] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:53] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:54] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:54] [INFO] Sorting products by: az
+[2026-06-06 08:34:54] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:54] [INFO] Sorting products by: lohi
+[2026-06-06 08:34:54] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:54] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:54] [INFO] Sorting products by: hilo
+[2026-06-06 08:34:54] [INFO] Setting up authenticated session
+[2026-06-06 08:34:54] [INFO] Navigating to: /
+[2026-06-06 08:34:54] [INFO] Setting up authenticated session
+[2026-06-06 08:34:54] [INFO] Navigating to: /
+[2026-06-06 08:34:54] [INFO] Setting up authenticated session
+[2026-06-06 08:34:54] [INFO] Navigating to: /
+[2026-06-06 08:34:54] [INFO] Setting up authenticated session
+[2026-06-06 08:34:54] [INFO] Navigating to: /
+[2026-06-06 08:34:54] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:55] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:55] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:55] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:55] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:55] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:55] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:55] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:55] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:55] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:55] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:55] [INFO] Adding to cart: Sauce Labs Backpack
+[2026-06-06 08:34:55] [INFO] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 08:34:55] [INFO] Removing from cart: Sauce Labs Backpack
+[2026-06-06 08:34:56] [INFO] Setting up authenticated session
+[2026-06-06 08:34:56] [INFO] Navigating to: /
+[2026-06-06 08:34:56] [INFO] Navigating to: /
+[2026-06-06 08:34:56] [INFO] Navigating to: /
+[2026-06-06 08:34:56] [INFO] Navigating to: /
+[2026-06-06 08:34:56] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:56] [INFO] Logging in as: locked_out_user
+[2026-06-06 08:34:56] [INFO] Logging in as: standard_user
