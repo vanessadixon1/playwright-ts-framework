@@ -1,3 +1,0 @@
-[2026-06-06 12:37:17] [info] Navigating to: /
-[2026-06-06 12:37:17] [info] Logging in as: standard_user
-[2026-06-06 12:37:18] [info] Error message verified: Epic sadface: Password is required

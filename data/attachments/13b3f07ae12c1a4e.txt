@@ -1,0 +1,2 @@
+[2026-06-06 12:40:15] [info] POST https://dummyjson.com/users/add — body: {"firstName":"Katelynn","lastName":"Bins"}
+[2026-06-06 12:40:16] [info] Response [201]: {"id":209,"firstName":"Katelynn","lastName":"Bins","maidenName":"","age":null,"gender":"","email":"","phone":"","username":"","password":"","birthDate":"","image":"","bloodGroup":"","height":null,"wei

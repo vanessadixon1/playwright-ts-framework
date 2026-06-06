@@ -1,2 +1,0 @@
-[2026-06-06 12:36:07] [info] GET https://dummyjson.com/users/1
-[2026-06-06 12:36:07] [info] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil

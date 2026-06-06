@@ -1,0 +1,5 @@
+[2026-06-06 12:40:49] [info] Setting up authenticated session
+[2026-06-06 12:40:49] [info] Navigating to: /
+[2026-06-06 12:40:50] [info] Logging in as: standard_user
+[2026-06-06 12:40:51] [info] Confirmed on inventory page
+[2026-06-06 12:40:51] [info] Adding to cart: Sauce Labs Backpack

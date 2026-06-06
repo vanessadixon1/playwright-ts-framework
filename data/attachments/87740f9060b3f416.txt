@@ -1,0 +1,4 @@
+[2026-06-06 12:40:15] [info] GET https://dummyjson.com/users
+[2026-06-06 12:40:15] [info] GET https://dummyjson.com/users
+[2026-06-06 12:40:15] [info] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+[2026-06-06 12:40:16] [info] Response [200]: {"users":[{"id":6,"firstName":"Olivia","lastName":"Wilson","maidenName":"","age":23,"gender":"female","email":"olivia.wilson@x.dummyjson.com","phone":"+91 607-295-6448","username":"oliviaw","password"

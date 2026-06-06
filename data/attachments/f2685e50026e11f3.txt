@@ -1,5 +1,0 @@
-[2026-06-06 12:37:11] [info] Setting up authenticated session
-[2026-06-06 12:37:11] [info] Navigating to: /
-[2026-06-06 12:37:12] [info] Logging in as: standard_user
-[2026-06-06 12:37:12] [info] Confirmed on inventory page
-[2026-06-06 12:37:12] [info] Sorting products by: lohi
