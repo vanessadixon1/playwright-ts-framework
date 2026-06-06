@@ -1105,3 +1105,16 @@
 [2026-06-06 08:34:56] [INFO] Logging in as: standard_user
 [2026-06-06 08:34:56] [INFO] Logging in as: locked_out_user
 [2026-06-06 08:34:56] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:57] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:57] [INFO] Error message verified: Epic sadface: Sorry, this user has been locked out
+[2026-06-06 08:34:57] [INFO] Confirmed on inventory page
+[2026-06-06 08:34:57] [INFO] Navigating to: /
+[2026-06-06 08:34:57] [INFO] Navigating to: /
+[2026-06-06 08:34:57] [INFO] Logging in as: invalid_user
+[2026-06-06 08:34:57] [INFO] Navigating to: /
+[2026-06-06 08:34:57] [INFO] Logging in as: 
+[2026-06-06 08:34:57] [INFO] Error message verified: Epic sadface: Username and password do not match
+[2026-06-06 08:34:58] [INFO] Logged out successfully
+[2026-06-06 08:34:58] [INFO] Logging in as: standard_user
+[2026-06-06 08:34:58] [INFO] Error message verified: Epic sadface: Username is required
+[2026-06-06 08:34:58] [INFO] Error message verified: Epic sadface: Password is required

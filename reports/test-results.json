@@ -136,20 +136,20 @@
   },
   "suites": [
     {
-      "title": "api/auth.spec.ts",
-      "file": "api/auth.spec.ts",
+      "title": "ui/cart.spec.ts",
+      "file": "ui/cart.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Authentication API",
-          "file": "api/auth.spec.ts",
-          "line": 4,
+          "title": "Cart Page",
+          "file": "ui/cart.spec.ts",
+          "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "@smoke - POST /auth/login returns token for valid credentials",
+              "title": "@smoke - cart displays added items",
               "ok": true,
               "tags": [
                 "smoke"
@@ -159,26 +159,38 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 372,
+                      "duration": 2367,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:53] [\u001b[32minfo\u001b[39m] POST https://dummyjson.com/auth/login — body: {\"username\":\"emilys\",\"password\":\"emilyspass\"}\n"
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:53] [\u001b[32minfo\u001b[39m] Response [200]: {\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ\n"
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:53.445Z",
+                      "startTime": "2026-06-06T12:34:17.507Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -186,56 +198,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "6bead371ebbc451c1152-45d796fff677b4247d6b",
-              "file": "api/auth.spec.ts",
-              "line": 5,
+              "id": "f5f17e11a7b0c7b72a70-e294b441ade08708d636",
+              "file": "ui/cart.spec.ts",
+              "line": 10,
               "column": 7
             },
             {
-              "title": "@smoke - login response includes user details",
-              "ok": true,
-              "tags": [
-                "smoke"
-              ],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 365,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "[2026-06-06 08:18:53] [\u001b[32minfo\u001b[39m] POST https://dummyjson.com/auth/login — body: {\"username\":\"emilys\",\"password\":\"emilyspass\"}\n"
-                        },
-                        {
-                          "text": "[2026-06-06 08:18:53] [\u001b[32minfo\u001b[39m] Response [200]: {\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-06T12:18:53.457Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "6bead371ebbc451c1152-ad3c445ec23d89dab7e5",
-              "file": "api/auth.spec.ts",
-              "line": 17,
-              "column": 7
-            },
-            {
-              "title": "@regression - login with invalid credentials returns 400",
+              "title": "@regression - cart item names are correct",
               "ok": true,
               "tags": [
                 "regression"
@@ -245,26 +214,96 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2378,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:17.552Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f5f17e11a7b0c7b72a70-079fa759b1eccb1d5891",
+              "file": "ui/cart.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "@regression - continue shopping returns to inventory",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 745,
+                      "duration": 2554,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:53] [\u001b[32minfo\u001b[39m] POST https://dummyjson.com/auth/login — body: {\"username\":\"nonexistent_user\",\"password\":\"wrong_password\"}\n"
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:54] [\u001b[32minfo\u001b[39m] Response [400]: {\"message\":\"Invalid credentials\"}\n"
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:53.463Z",
+                      "startTime": "2026-06-06T12:34:17.508Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -272,13 +311,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "6bead371ebbc451c1152-b3120dbec80e60663d19",
-              "file": "api/auth.spec.ts",
-              "line": 31,
+              "id": "f5f17e11a7b0c7b72a70-bb2db548390c48d41133",
+              "file": "ui/cart.spec.ts",
+              "line": 22,
               "column": 7
             },
             {
-              "title": "@regression - login response includes refresh token",
+              "title": "@regression - proceed to checkout navigates correctly",
               "ok": true,
               "tags": [
                 "regression"
@@ -288,26 +327,38 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 753,
+                      "duration": 2485,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:53] [\u001b[32minfo\u001b[39m] POST https://dummyjson.com/auth/login — body: {\"username\":\"emilys\",\"password\":\"emilyspass\"}\n"
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:54] [\u001b[32minfo\u001b[39m] Response [200]: {\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ\n"
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:20] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:21] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:53.445Z",
+                      "startTime": "2026-06-06T12:34:17.490Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -315,42 +366,54 @@
                   "status": "expected"
                 }
               ],
-              "id": "6bead371ebbc451c1152-f07def4bd62e498c28b3",
-              "file": "api/auth.spec.ts",
-              "line": 40,
+              "id": "f5f17e11a7b0c7b72a70-3aa282dc7335089e2742",
+              "file": "ui/cart.spec.ts",
+              "line": 27,
               "column": 7
             },
             {
-              "title": "@regression - login response headers include content-type json",
+              "title": "@smoke - cart displays added items",
               "ok": true,
               "tags": [
-                "regression"
+                "smoke"
               ],
               "tests": [
                 {
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 183,
+                      "duration": 5464,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:53] [\u001b[32minfo\u001b[39m] POST https://dummyjson.com/auth/login — body: {\"username\":\"emilys\",\"password\":\"emilyspass\"}\n"
+                          "text": "[2026-06-06 08:34:33] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:54] [\u001b[32minfo\u001b[39m] Response [200]: {\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ\n"
+                          "text": "[2026-06-06 08:34:33] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:34] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:35] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:35] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:36] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:53.848Z",
+                      "startTime": "2026-06-06T12:34:29.546Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -358,13 +421,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "6bead371ebbc451c1152-cf6ef881d44fac1800e4",
-              "file": "api/auth.spec.ts",
-              "line": 50,
+              "id": "f5f17e11a7b0c7b72a70-a9543e9ef2f99284aed7",
+              "file": "ui/cart.spec.ts",
+              "line": 10,
               "column": 7
             },
             {
-              "title": "@regression - token from login can authenticate subsequent request",
+              "title": "@regression - cart item names are correct",
               "ok": true,
               "tags": [
                 "regression"
@@ -374,26 +437,38 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 5,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 331,
+                      "duration": 5580,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:53] [\u001b[32minfo\u001b[39m] POST https://dummyjson.com/auth/login — body: {\"username\":\"emilys\",\"password\":\"emilyspass\"}\n"
+                          "text": "[2026-06-06 08:34:35] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:54] [\u001b[32minfo\u001b[39m] Response [200]: {\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ\n"
+                          "text": "[2026-06-06 08:34:35] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:36] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:53.850Z",
+                      "startTime": "2026-06-06T12:34:29.675Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -401,13 +476,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "6bead371ebbc451c1152-61329e3a2c923d60db36",
-              "file": "api/auth.spec.ts",
-              "line": 59,
+              "id": "f5f17e11a7b0c7b72a70-f71d921a5102f7f10086",
+              "file": "ui/cart.spec.ts",
+              "line": 16,
               "column": 7
             },
             {
-              "title": "@regression - login with custom token expiry",
+              "title": "@regression - continue shopping returns to inventory",
               "ok": true,
               "tags": [
                 "regression"
@@ -417,26 +492,41 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 189,
+                      "duration": 5538,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:54] [\u001b[32minfo\u001b[39m] POST https://dummyjson.com/auth/login — body: {\"username\":\"emilys\",\"password\":\"emilyspass\",\"expiresInMins\":60}\n"
+                          "text": "[2026-06-06 08:34:34] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:54] [\u001b[32minfo\u001b[39m] Response [200]: {\"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ\n"
+                          "text": "[2026-06-06 08:34:34] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:35] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:36] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:36] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:36] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:54.040Z",
+                      "startTime": "2026-06-06T12:34:29.796Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -444,9 +534,287 @@
                   "status": "expected"
                 }
               ],
-              "id": "6bead371ebbc451c1152-3783f97b6512c0a96ae8",
-              "file": "api/auth.spec.ts",
-              "line": 72,
+              "id": "f5f17e11a7b0c7b72a70-06e1925ca238a73297cd",
+              "file": "ui/cart.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "@regression - proceed to checkout navigates correctly",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5754,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:32] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:32] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:34] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:35] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:35] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:36] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:29.974Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f5f17e11a7b0c7b72a70-d28701b32ef4685ea0a9",
+              "file": "ui/cart.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "@smoke - cart displays added items",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4459,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:48.179Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f5f17e11a7b0c7b72a70-ec0d86095d238a82a1d6",
+              "file": "ui/cart.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "@regression - cart item names are correct",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4422,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:48.179Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f5f17e11a7b0c7b72a70-0c861d097852c6f660ea",
+              "file": "ui/cart.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "@regression - continue shopping returns to inventory",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4533,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:48.473Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f5f17e11a7b0c7b72a70-5f456afeefcdedeb78e2",
+              "file": "ui/cart.spec.ts",
+              "line": 22,
+              "column": 7
+            },
+            {
+              "title": "@regression - proceed to checkout navigates correctly",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4427,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:51] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:52] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:48.431Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f5f17e11a7b0c7b72a70-fc2405b7e219de98c15a",
+              "file": "ui/cart.spec.ts",
+              "line": 27,
               "column": 7
             }
           ]
@@ -454,20 +822,20 @@
       ]
     },
     {
-      "title": "api/users.spec.ts",
-      "file": "api/users.spec.ts",
+      "title": "ui/inventory.spec.ts",
+      "file": "ui/inventory.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Users API",
-          "file": "api/users.spec.ts",
-          "line": 4,
+          "title": "Inventory Page",
+          "file": "ui/inventory.spec.ts",
+          "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "@smoke - GET /users returns paginated user list",
+              "title": "@smoke - inventory page loads with products",
               "ok": true,
               "tags": [
                 "smoke"
@@ -477,26 +845,32 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 161,
+                      "duration": 1726,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] GET https://dummyjson.com/users\n"
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"users\":[{\"id\":1,\"firstName\":\"Emily\",\"lastName\":\"Johnson\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"passw\n"
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:23] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.224Z",
+                      "startTime": "2026-06-06T12:34:21.900Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -504,13 +878,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-5930c15f212055a7da0b",
-              "file": "api/users.spec.ts",
-              "line": 5,
+              "id": "733b82b1d8e14a1148af-270b0e1453718037107a",
+              "file": "ui/inventory.spec.ts",
+              "line": 6,
               "column": 7
             },
             {
-              "title": "@regression - GET /users pagination - skip works correctly",
+              "title": "@regression - products sorted A-Z by default",
               "ok": true,
               "tags": [
                 "regression"
@@ -520,32 +894,87 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1670,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:23] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:23] [\u001b[32minfo\u001b[39m] Sorting products by: az\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:21.900Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-ba7f74454d71a166236e",
+              "file": "ui/inventory.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "@regression - products sorted by price low-to-high",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 591,
+                      "duration": 1617,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] GET https://dummyjson.com/users\n"
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] GET https://dummyjson.com/users\n"
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"users\":[{\"id\":1,\"firstName\":\"Emily\",\"lastName\":\"Johnson\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"passw\n"
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"users\":[{\"id\":6,\"firstName\":\"Olivia\",\"lastName\":\"Wilson\",\"maidenName\":\"\",\"age\":23,\"gender\":\"female\",\"email\":\"olivia.wilson@x.dummyjson.com\",\"phone\":\"+91 607-295-6448\",\"username\":\"oliviaw\",\"password\"\n"
+                          "text": "[2026-06-06 08:34:23] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:23] [\u001b[32minfo\u001b[39m] Sorting products by: lohi\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.224Z",
+                      "startTime": "2026-06-06T12:34:21.981Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -553,13 +982,65 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-e6c1f1f3f5ae625b11f9",
-              "file": "api/users.spec.ts",
-              "line": 14,
+              "id": "733b82b1d8e14a1148af-fd613725e1e39f9d49c2",
+              "file": "ui/inventory.spec.ts",
+              "line": 18,
               "column": 7
             },
             {
-              "title": "@smoke - GET /users/:id returns a single user",
+              "title": "@regression - products sorted by price high-to-low",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1601,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:22] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:23] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:23] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:23] [\u001b[32minfo\u001b[39m] Sorting products by: hilo\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:22.017Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-6d51569fa862106d16ff",
+              "file": "ui/inventory.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "@smoke - add item to cart updates badge count",
               "ok": true,
               "tags": [
                 "smoke"
@@ -569,26 +1050,35 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 159,
+                      "duration": 1929,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] GET https://dummyjson.com/users/1\n"
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"id\":1,\"firstName\":\"Emily\",\"lastName\":\"Johnson\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"password\":\"emil\n"
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.224Z",
+                      "startTime": "2026-06-06T12:34:23.604Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -596,13 +1086,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-e2c0e3b9c95b4b8d831d",
-              "file": "api/users.spec.ts",
-              "line": 29,
+              "id": "733b82b1d8e14a1148af-5ccea2deacfa649ed98b",
+              "file": "ui/inventory.spec.ts",
+              "line": 32,
               "column": 7
             },
             {
-              "title": "@regression - GET /users/:id - user not found returns 404",
+              "title": "@regression - add multiple items to cart",
               "ok": true,
               "tags": [
                 "regression"
@@ -612,26 +1102,38 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 154,
+                      "duration": 1811,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] GET https://dummyjson.com/users/0\n"
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [404]: {\"message\":\"User with id '0' not found\"}\n"
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.223Z",
+                      "startTime": "2026-06-06T12:34:23.623Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -639,13 +1141,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-fb42187dfc1aac0a2caa",
-              "file": "api/users.spec.ts",
-              "line": 39,
+              "id": "733b82b1d8e14a1148af-c160246a2c632e263a4c",
+              "file": "ui/inventory.spec.ts",
+              "line": 38,
               "column": 7
             },
             {
-              "title": "@regression - GET /users/search returns matching users",
+              "title": "@regression - remove item from cart",
               "ok": true,
               "tags": [
                 "regression"
@@ -655,26 +1157,38 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 136,
+                      "duration": 1902,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] GET https://dummyjson.com/users/search\n"
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"users\":[{\"id\":1,\"firstName\":\"Emily\",\"lastName\":\"Johnson\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"passw\n"
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Removing from cart: Sauce Labs Backpack\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.391Z",
+                      "startTime": "2026-06-06T12:34:23.651Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -682,13 +1196,65 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-3ad296bcc2543f4c1dc0",
-              "file": "api/users.spec.ts",
+              "id": "733b82b1d8e14a1148af-2ee51a73700dc07dc209",
+              "file": "ui/inventory.spec.ts",
               "line": 44,
               "column": 7
             },
             {
-              "title": "@smoke - POST /users/add creates a new user",
+              "title": "@regression - navigate to cart page",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1981,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:24] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:23.706Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-ec6a55fcbfb4e6450597",
+              "file": "ui/inventory.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "@smoke - logout redirects to login page",
               "ok": true,
               "tags": [
                 "smoke"
@@ -698,26 +1264,35 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 147,
+                      "duration": 2528,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] POST https://dummyjson.com/users/add — body: {\"firstName\":\"Thomas\",\"lastName\":\"Frami\"}\n"
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [201]: {\"id\":209,\"firstName\":\"Thomas\",\"lastName\":\"Frami\",\"maidenName\":\"\",\"age\":null,\"gender\":\"\",\"email\":\"\",\"phone\":\"\",\"username\":\"\",\"password\":\"\",\"birthDate\":\"\",\"image\":\"\",\"bloodGroup\":\"\",\"height\":null,\"weig\n"
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:26] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:26] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:27] [\u001b[32minfo\u001b[39m] Logged out successfully\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.411Z",
+                      "startTime": "2026-06-06T12:34:25.463Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -725,13 +1300,62 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-ea6c01626ffccefd078c",
-              "file": "api/users.spec.ts",
-              "line": 54,
+              "id": "733b82b1d8e14a1148af-b23ee814274b0c97da26",
+              "file": "ui/inventory.spec.ts",
+              "line": 57,
               "column": 7
             },
             {
-              "title": "@regression - PUT /users/:id updates user fully",
+              "title": "@smoke - inventory page loads with products",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2097,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:38] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:36.926Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-bf465d7def5ad065419b",
+              "file": "ui/inventory.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "@regression - products sorted A-Z by default",
               "ok": true,
               "tags": [
                 "regression"
@@ -741,26 +1365,933 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2616,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:37] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:38] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:38] [\u001b[32minfo\u001b[39m] Sorting products by: az\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:36.980Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-4407e886ed8cb44e838d",
+              "file": "ui/inventory.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "@regression - products sorted by price low-to-high",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2634,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:38] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:38] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:38] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:39] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:39] [\u001b[32minfo\u001b[39m] Sorting products by: lohi\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:37.582Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-c8bd3e18daa25b45123e",
+              "file": "ui/inventory.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "@regression - products sorted by price high-to-low",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3346,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:39] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:39] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:39] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:41] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:41] [\u001b[32minfo\u001b[39m] Sorting products by: hilo\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:38.491Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-bd3c880a0499a7f6f948",
+              "file": "ui/inventory.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "@smoke - add item to cart updates badge count",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3277,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:39] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:39] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:40] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:41] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:41] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:39.053Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-f5e8a13fc1986e05e729",
+              "file": "ui/inventory.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "@regression - add multiple items to cart",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3054,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:40] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:40] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:41] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:39.651Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-f39f54fc3563eeecc32f",
+              "file": "ui/inventory.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "@regression - remove item from cart",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2972,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:40] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:40] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:41] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Removing from cart: Sauce Labs Backpack\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:40.256Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-0ab8562d92e5184f6c3f",
+              "file": "ui/inventory.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "@regression - navigate to cart page",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2895,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:43] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:43] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:43] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:41.913Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-d2eb3cc84c246e4c374b",
+              "file": "ui/inventory.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "@smoke - logout redirects to login page",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3996,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:42] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:43] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:44] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:46] [\u001b[32minfo\u001b[39m] Logged out successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:42.391Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-0c66629a1509b8bd4f8b",
+              "file": "ui/inventory.spec.ts",
+              "line": 57,
+              "column": 7
+            },
+            {
+              "title": "@smoke - inventory page loads with products",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1372,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:53.070Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-0bd2e46056232d105e3c",
+              "file": "ui/inventory.spec.ts",
+              "line": 6,
+              "column": 7
+            },
+            {
+              "title": "@regression - products sorted A-Z by default",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1496,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Sorting products by: az\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:53.072Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-d8d301f72fc61730313d",
+              "file": "ui/inventory.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "@regression - products sorted by price low-to-high",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1337,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Sorting products by: lohi\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:53.123Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-5016abe08342cd44d401",
+              "file": "ui/inventory.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "@regression - products sorted by price high-to-low",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1431,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:53] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Sorting products by: hilo\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:53.187Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-da6e3ac311669b2f3cb0",
+              "file": "ui/inventory.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "@smoke - add item to cart updates badge count",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1439,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:54.461Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-ce60315ecdba2419ade7",
+              "file": "ui/inventory.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "@regression - add multiple items to cart",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1622,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Bike Light\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:54.496Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-fdd02622fe84d898d321",
+              "file": "ui/inventory.spec.ts",
+              "line": 38,
+              "column": 7
+            },
+            {
+              "title": "@regression - remove item from cart",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1634,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Removing from cart: Sauce Labs Backpack\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:54.590Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-85970ceb5af4a4c2f20e",
+              "file": "ui/inventory.spec.ts",
+              "line": 44,
+              "column": 7
+            },
+            {
+              "title": "@regression - navigate to cart page",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1523,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:54] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:55] [\u001b[32minfo\u001b[39m] Adding to cart: Sauce Labs Backpack\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:54.689Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-a7cf3a433472528a6c67",
+              "file": "ui/inventory.spec.ts",
+              "line": 51,
+              "column": 7
+            },
+            {
+              "title": "@smoke - logout redirects to login page",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2465,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:56] [\u001b[32minfo\u001b[39m] Setting up authenticated session\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:56] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:56] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:58] [\u001b[32minfo\u001b[39m] Logged out successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:55.945Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "733b82b1d8e14a1148af-70bc0e1a865530149801",
+              "file": "ui/inventory.spec.ts",
+              "line": 57,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/login.spec.ts",
+      "file": "ui/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Page",
+          "file": "ui/login.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@smoke - login form is visible",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 146,
+                      "duration": 1486,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] PUT https://dummyjson.com/users/1\n"
-                        },
-                        {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"id\":1,\"firstName\":\"Updated\",\"lastName\":\"Testuser\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"password\":\"e\n"
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.416Z",
+                      "startTime": "2026-06-06T12:34:25.563Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -768,42 +2299,45 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-6c514a512dcb5d28c827",
-              "file": "api/users.spec.ts",
-              "line": 65,
+              "id": "25217b8bb4316ea872c4-a7f19b0243623bf6432f",
+              "file": "ui/login.spec.ts",
+              "line": 9,
               "column": 7
             },
             {
-              "title": "@regression - PATCH /users/:id partial update",
+              "title": "@smoke - successful login with standard user",
               "ok": true,
               "tags": [
-                "regression"
+                "smoke"
               ],
               "tests": [
                 {
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 139,
+                      "duration": 1779,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] PATCH https://dummyjson.com/users/1\n"
+                          "text": "[2026-06-06 08:34:25] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"id\":1,\"firstName\":\"Patched\",\"lastName\":\"Johnson\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"password\":\"em\n"
+                          "text": "[2026-06-06 08:34:26] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:27] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.534Z",
+                      "startTime": "2026-06-06T12:34:25.597Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -811,13 +2345,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-37712bc62b782fa672cb",
-              "file": "api/users.spec.ts",
-              "line": 74,
+              "id": "25217b8bb4316ea872c4-3f95eca35b054c8b985a",
+              "file": "ui/login.spec.ts",
+              "line": 13,
               "column": 7
             },
             {
-              "title": "@regression - DELETE /users/:id returns 200 with isDeleted flag",
+              "title": "@regression - locked user sees error message",
               "ok": true,
               "tags": [
                 "regression"
@@ -827,26 +2361,29 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 154,
+                      "duration": 1622,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] DELETE https://dummyjson.com/users/1\n"
+                          "text": "[2026-06-06 08:34:26] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"id\":1,\"firstName\":\"Emily\",\"lastName\":\"Johnson\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"password\":\"emil\n"
+                          "text": "[2026-06-06 08:34:26] [\u001b[32minfo\u001b[39m] Logging in as: locked_out_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:27] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Sorry, this user has been locked out\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.565Z",
+                      "startTime": "2026-06-06T12:34:25.725Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -854,13 +2391,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-e22646c2d40e25ec1120",
-              "file": "api/users.spec.ts",
-              "line": 82,
+              "id": "25217b8bb4316ea872c4-05853066d6f3f8d94616",
+              "file": "ui/login.spec.ts",
+              "line": 19,
               "column": 7
             },
             {
-              "title": "@regression - user object schema is valid",
+              "title": "@regression - invalid credentials shows error",
               "ok": true,
               "tags": [
                 "regression"
@@ -870,26 +2407,29 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 147,
+                      "duration": 1407,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] GET https://dummyjson.com/users/1\n"
+                          "text": "[2026-06-06 08:34:27] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"id\":1,\"firstName\":\"Emily\",\"lastName\":\"Johnson\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"password\":\"emil\n"
+                          "text": "[2026-06-06 08:34:28] [\u001b[32minfo\u001b[39m] Logging in as: invalid_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:28] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Username and password do not match\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.568Z",
+                      "startTime": "2026-06-06T12:34:27.109Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -897,13 +2437,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-99b2b272674998ae3d80",
-              "file": "api/users.spec.ts",
-              "line": 87,
+              "id": "25217b8bb4316ea872c4-be820bbcbdf9dbf2f26b",
+              "file": "ui/login.spec.ts",
+              "line": 24,
               "column": 7
             },
             {
-              "title": "@regression - limit parameter controls page size",
+              "title": "@regression - empty username shows required error",
               "ok": true,
               "tags": [
                 "regression"
@@ -913,26 +2453,29 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "api",
-                  "projectName": "api",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 151,
+                      "duration": 1702,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] GET https://dummyjson.com/users\n"
+                          "text": "[2026-06-06 08:34:27] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
                         },
                         {
-                          "text": "[2026-06-06 08:18:55] [\u001b[32minfo\u001b[39m] Response [200]: {\"users\":[{\"id\":1,\"firstName\":\"Emily\",\"lastName\":\"Johnson\",\"maidenName\":\"Smith\",\"age\":29,\"gender\":\"female\",\"email\":\"emily.johnson@x.dummyjson.com\",\"phone\":\"+81 965-431-3024\",\"username\":\"emilys\",\"passw\n"
+                          "text": "[2026-06-06 08:34:28] [\u001b[32minfo\u001b[39m] Logging in as: \n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:28] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Username is required\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-06T12:18:55.683Z",
+                      "startTime": "2026-06-06T12:34:27.366Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -940,9 +2483,595 @@
                   "status": "expected"
                 }
               ],
-              "id": "fe1b24ca564ee32ce980-f4a719d8140876f414f4",
-              "file": "api/users.spec.ts",
-              "line": 97,
+              "id": "25217b8bb4316ea872c4-a1944bd075f15de2c875",
+              "file": "ui/login.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "@regression - empty password shows required error",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1692,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:27] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:28] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:28] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Password is required\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:27.439Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-8c66332d60e1206d804f",
+              "file": "ui/login.spec.ts",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "@smoke - login form is visible",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2003,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:43] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:42.763Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-31e876700cc4c0904cea",
+              "file": "ui/login.spec.ts",
+              "line": 9,
+              "column": 7
+            },
+            {
+              "title": "@smoke - successful login with standard user",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2694,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:43] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:44] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:45] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:43.280Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-7eeeee3f33266edaea51",
+              "file": "ui/login.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "@regression - locked user sees error message",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2247,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:45] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:46] [\u001b[32minfo\u001b[39m] Logging in as: locked_out_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:46] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Sorry, this user has been locked out\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:44.799Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-73d2d190bc962be3c528",
+              "file": "ui/login.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "@regression - invalid credentials shows error",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2123,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:45] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:46] [\u001b[32minfo\u001b[39m] Logging in as: invalid_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:46] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Username and password do not match\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:44.837Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-e7d11aea0d5c65557eb3",
+              "file": "ui/login.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "@regression - empty username shows required error",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1486,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:46] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:47] [\u001b[32minfo\u001b[39m] Logging in as: \n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:47] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Username is required\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:46.103Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-1d2584d0b89dc6cb1ccc",
+              "file": "ui/login.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "@regression - empty password shows required error",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1199,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:46] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:47] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:47] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Password is required\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:46.497Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-f6ae1d7eb5f7d7dd61ca",
+              "file": "ui/login.spec.ts",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "@smoke - login form is visible",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1005,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:56] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:56.154Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-4c326fe9b6cef3de80d0",
+              "file": "ui/login.spec.ts",
+              "line": 9,
+              "column": 7
+            },
+            {
+              "title": "@smoke - successful login with standard user",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 1331,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:56] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:56] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Confirmed on inventory page\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:56.233Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-4924f93ae99e77df63ea",
+              "file": "ui/login.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "@regression - locked user sees error message",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1197,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:56] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:56] [\u001b[32minfo\u001b[39m] Logging in as: locked_out_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Sorry, this user has been locked out\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:56.241Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-4241509ec013811410d6",
+              "file": "ui/login.spec.ts",
+              "line": 19,
+              "column": 7
+            },
+            {
+              "title": "@regression - invalid credentials shows error",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 1182,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Logging in as: invalid_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Username and password do not match\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:57.202Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-db10296430c1ef939058",
+              "file": "ui/login.spec.ts",
+              "line": 24,
+              "column": 7
+            },
+            {
+              "title": "@regression - empty username shows required error",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 1012,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Logging in as: \n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:58] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Username is required\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:57.460Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-877572f33b7045eb80e7",
+              "file": "ui/login.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "@regression - empty password shows required error",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 939,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[2026-06-06 08:34:57] [\u001b[32minfo\u001b[39m] Navigating to: /\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:58] [\u001b[32minfo\u001b[39m] Logging in as: standard_user\n"
+                        },
+                        {
+                          "text": "[2026-06-06 08:34:58] [\u001b[32minfo\u001b[39m] Error message verified: Epic sadface: Password is required\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-06T12:34:57.597Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25217b8bb4316ea872c4-1342b249912a6779ac93",
+              "file": "ui/login.spec.ts",
+              "line": 34,
               "column": 7
             }
           ]
@@ -952,9 +3081,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-06T12:18:52.020Z",
-    "duration": 3833.058,
-    "expected": 18,
+    "startTime": "2026-06-06T12:34:16.871Z",
+    "duration": 41721.298,
+    "expected": 57,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
