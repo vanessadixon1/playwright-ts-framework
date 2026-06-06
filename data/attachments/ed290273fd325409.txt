@@ -1,0 +1,2 @@
+[2026-06-06 12:28:33] [info] POST https://dummyjson.com/auth/login — body: {"username":"nonexistent_user","password":"wrong_password"}
+[2026-06-06 12:28:33] [info] Response [400]: {"message":"Invalid credentials"}

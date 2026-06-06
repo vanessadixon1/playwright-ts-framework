@@ -1,0 +1,2 @@
+[2026-06-06 12:28:33] [info] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass","expiresInMins":60}
+[2026-06-06 12:28:34] [info] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ

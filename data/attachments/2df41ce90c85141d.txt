@@ -1,0 +1,2 @@
+[2026-06-06 12:28:35] [info] POST https://dummyjson.com/users/add — body: {"firstName":"Gisselle","lastName":"Rau"}
+[2026-06-06 12:28:35] [info] Response [201]: {"id":209,"firstName":"Gisselle","lastName":"Rau","maidenName":"","age":null,"gender":"","email":"","phone":"","username":"","password":"","birthDate":"","image":"","bloodGroup":"","height":null,"weig

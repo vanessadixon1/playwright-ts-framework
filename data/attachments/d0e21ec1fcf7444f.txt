@@ -1,0 +1,5 @@
+[2026-06-06 12:28:34] [info] Setting up authenticated session
+[2026-06-06 12:28:34] [info] Navigating to: /
+[2026-06-06 12:28:34] [info] Logging in as: standard_user
+[2026-06-06 12:28:35] [info] Confirmed on inventory page
+[2026-06-06 12:28:35] [info] Sorting products by: hilo
