@@ -1,0 +1,886 @@
+<testsuites id="" name="" tests="94" failures="0" skipped="0" errors="0" time="60.67405899999999">
+<testsuite name="ui/cart.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="chromium" tests="4" failures="0" skipped="0" time="11.722" errors="0">
+<testcase name="Cart Page › @smoke - cart displays added items" classname="ui/cart.spec.ts" time="2.839">
+<system-out>
+<![CDATA[[2026-06-06 07:29:17] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:17] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:18] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:19] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:19] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:19] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - cart item names are correct" classname="ui/cart.spec.ts" time="2.893">
+<system-out>
+<![CDATA[[2026-06-06 07:29:17] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:17] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:18] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:19] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:19] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:19] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - continue shopping returns to inventory" classname="ui/cart.spec.ts" time="3.04">
+<system-out>
+<![CDATA[[2026-06-06 07:29:17] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:17] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:18] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:19] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:19] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:19] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 07:29:19] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - proceed to checkout navigates correctly" classname="ui/cart.spec.ts" time="2.95">
+<system-out>
+<![CDATA[[2026-06-06 07:29:17] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:17] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:18] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:19] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:19] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:19] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/inventory.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="chromium" tests="9" failures="0" skipped="0" time="18.647" errors="0">
+<testcase name="Inventory Page › @smoke - inventory page loads with products" classname="ui/inventory.spec.ts" time="1.727">
+<system-out>
+<![CDATA[[2026-06-06 07:29:20] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:20] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:20] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:21] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted A-Z by default" classname="ui/inventory.spec.ts" time="2.096">
+<system-out>
+<![CDATA[[2026-06-06 07:29:20] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:20] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:20] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:21] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:21] [[32minfo[39m] Sorting products by: az
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted by price low-to-high" classname="ui/inventory.spec.ts" time="1.667">
+<system-out>
+<![CDATA[[2026-06-06 07:29:20] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:20] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:20] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:21] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:21] [[32minfo[39m] Sorting products by: lohi
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted by price high-to-low" classname="ui/inventory.spec.ts" time="1.482">
+<system-out>
+<![CDATA[[2026-06-06 07:29:20] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:20] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:20] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:21] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:21] [[32minfo[39m] Sorting products by: hilo
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @smoke - add item to cart updates badge count" classname="ui/inventory.spec.ts" time="2.336">
+<system-out>
+<![CDATA[[2026-06-06 07:29:21] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:21] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:22] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:23] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:23] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - add multiple items to cart" classname="ui/inventory.spec.ts" time="2.403">
+<system-out>
+<![CDATA[[2026-06-06 07:29:21] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:21] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:22] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:23] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:23] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:23] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - remove item from cart" classname="ui/inventory.spec.ts" time="2.373">
+<system-out>
+<![CDATA[[2026-06-06 07:29:21] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:21] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:22] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:23] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:23] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:23] [[32minfo[39m] Removing from cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - navigate to cart page" classname="ui/inventory.spec.ts" time="1.982">
+<system-out>
+<![CDATA[[2026-06-06 07:29:22] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:22] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:22] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:23] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:23] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @smoke - logout redirects to login page" classname="ui/inventory.spec.ts" time="2.581">
+<system-out>
+<![CDATA[[2026-06-06 07:29:24] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:24] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:24] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:25] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:26] [[32minfo[39m] Logged out successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="chromium" tests="6" failures="0" skipped="0" time="7.851" errors="0">
+<testcase name="Login Page › @smoke - login form is visible" classname="ui/login.spec.ts" time="1.284">
+<system-out>
+<![CDATA[[2026-06-06 07:29:24] [[32minfo[39m] Navigating to: /
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @smoke - successful login with standard user" classname="ui/login.spec.ts" time="1.613">
+<system-out>
+<![CDATA[[2026-06-06 07:29:24] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:24] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:25] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - locked user sees error message" classname="ui/login.spec.ts" time="1.423">
+<system-out>
+<![CDATA[[2026-06-06 07:29:24] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:24] [[32minfo[39m] Logging in as: locked_out_user
+[2026-06-06 07:29:25] [[32minfo[39m] Error message verified: Epic sadface: Sorry, this user has been locked out
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - invalid credentials shows error" classname="ui/login.spec.ts" time="1.245">
+<system-out>
+<![CDATA[[2026-06-06 07:29:25] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:26] [[32minfo[39m] Logging in as: invalid_user
+[2026-06-06 07:29:26] [[32minfo[39m] Error message verified: Epic sadface: Username and password do not match
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - empty username shows required error" classname="ui/login.spec.ts" time="1.154">
+<system-out>
+<![CDATA[[2026-06-06 07:29:25] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:26] [[32minfo[39m] Logging in as: 
+[2026-06-06 07:29:26] [[32minfo[39m] Error message verified: Epic sadface: Username is required
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - empty password shows required error" classname="ui/login.spec.ts" time="1.132">
+<system-out>
+<![CDATA[[2026-06-06 07:29:25] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:26] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:26] [[32minfo[39m] Error message verified: Epic sadface: Password is required
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/cart.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="firefox" tests="4" failures="0" skipped="0" time="30.134" errors="0">
+<testcase name="Cart Page › @smoke - cart displays added items" classname="ui/cart.spec.ts" time="6.977">
+<system-out>
+<![CDATA[[2026-06-06 07:29:30] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:30] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:33] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:34] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:34] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:35] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - cart item names are correct" classname="ui/cart.spec.ts" time="6.717">
+<system-out>
+<![CDATA[[2026-06-06 07:29:31] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:31] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:33] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:34] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:34] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:35] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - continue shopping returns to inventory" classname="ui/cart.spec.ts" time="7.123">
+<system-out>
+<![CDATA[[2026-06-06 07:29:34] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:34] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:35] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:35] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:35] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:36] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 07:29:36] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - proceed to checkout navigates correctly" classname="ui/cart.spec.ts" time="9.317">
+<system-out>
+<![CDATA[[2026-06-06 07:29:36] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:36] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:38] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:38] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:38] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:39] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/inventory.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="firefox" tests="9" failures="0" skipped="0" time="26.512" errors="0">
+<testcase name="Inventory Page › @smoke - inventory page loads with products" classname="ui/inventory.spec.ts" time="3.141">
+<system-out>
+<![CDATA[[2026-06-06 07:29:36] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:36] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:36] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:38] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted A-Z by default" classname="ui/inventory.spec.ts" time="3.525">
+<system-out>
+<![CDATA[[2026-06-06 07:29:36] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:36] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:37] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:38] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:38] [[32minfo[39m] Sorting products by: az
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted by price low-to-high" classname="ui/inventory.spec.ts" time="3.385">
+<system-out>
+<![CDATA[[2026-06-06 07:29:37] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:37] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:38] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:39] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:39] [[32minfo[39m] Sorting products by: lohi
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted by price high-to-low" classname="ui/inventory.spec.ts" time="2.206">
+<system-out>
+<![CDATA[[2026-06-06 07:29:39] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:39] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:40] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:40] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:40] [[32minfo[39m] Sorting products by: hilo
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @smoke - add item to cart updates badge count" classname="ui/inventory.spec.ts" time="3.064">
+<system-out>
+<![CDATA[[2026-06-06 07:29:40] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:40] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:40] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:41] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:41] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - add multiple items to cart" classname="ui/inventory.spec.ts" time="2.712">
+<system-out>
+<![CDATA[[2026-06-06 07:29:40] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:40] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:41] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:42] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:42] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:42] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - remove item from cart" classname="ui/inventory.spec.ts" time="3.014">
+<system-out>
+<![CDATA[[2026-06-06 07:29:40] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:40] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:41] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:42] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:42] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:43] [[32minfo[39m] Removing from cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - navigate to cart page" classname="ui/inventory.spec.ts" time="2.465">
+<system-out>
+<![CDATA[[2026-06-06 07:29:42] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:42] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:42] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:43] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:43] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @smoke - logout redirects to login page" classname="ui/inventory.spec.ts" time="3">
+<system-out>
+<![CDATA[[2026-06-06 07:29:43] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:43] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:43] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:44] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:45] [[32minfo[39m] Logged out successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="firefox" tests="6" failures="0" skipped="0" time="10.721" errors="0">
+<testcase name="Login Page › @smoke - login form is visible" classname="ui/login.spec.ts" time="1.602">
+<system-out>
+<![CDATA[[2026-06-06 07:29:43] [[32minfo[39m] Navigating to: /
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @smoke - successful login with standard user" classname="ui/login.spec.ts" time="1.969">
+<system-out>
+<![CDATA[[2026-06-06 07:29:43] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:44] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:45] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - locked user sees error message" classname="ui/login.spec.ts" time="2.214">
+<system-out>
+<![CDATA[[2026-06-06 07:29:44] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:45] [[32minfo[39m] Logging in as: locked_out_user
+[2026-06-06 07:29:45] [[32minfo[39m] Error message verified: Epic sadface: Sorry, this user has been locked out
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - invalid credentials shows error" classname="ui/login.spec.ts" time="1.984">
+<system-out>
+<![CDATA[[2026-06-06 07:29:45] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:45] [[32minfo[39m] Logging in as: invalid_user
+[2026-06-06 07:29:46] [[32minfo[39m] Error message verified: Epic sadface: Username and password do not match
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - empty username shows required error" classname="ui/login.spec.ts" time="1.463">
+<system-out>
+<![CDATA[[2026-06-06 07:29:45] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:46] [[32minfo[39m] Logging in as: 
+[2026-06-06 07:29:46] [[32minfo[39m] Error message verified: Epic sadface: Username is required
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - empty password shows required error" classname="ui/login.spec.ts" time="1.489">
+<system-out>
+<![CDATA[[2026-06-06 07:29:46] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:46] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:47] [[32minfo[39m] Error message verified: Epic sadface: Password is required
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/cart.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="webkit" tests="4" failures="0" skipped="0" time="20.485" errors="0">
+<testcase name="Cart Page › @smoke - cart displays added items" classname="ui/cart.spec.ts" time="5.018">
+<system-out>
+<![CDATA[[2026-06-06 07:29:51] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:51] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:51] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:52] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:52] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:52] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - cart item names are correct" classname="ui/cart.spec.ts" time="5.13">
+<system-out>
+<![CDATA[[2026-06-06 07:29:51] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:51] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:51] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:52] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:52] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:52] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - continue shopping returns to inventory" classname="ui/cart.spec.ts" time="5.328">
+<system-out>
+<![CDATA[[2026-06-06 07:29:51] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:51] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:51] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:52] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:52] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:52] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 07:29:52] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - proceed to checkout navigates correctly" classname="ui/cart.spec.ts" time="5.009">
+<system-out>
+<![CDATA[[2026-06-06 07:29:51] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:51] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:51] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:52] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:52] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:52] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/inventory.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="webkit" tests="9" failures="0" skipped="0" time="15.92" errors="0">
+<testcase name="Inventory Page › @smoke - inventory page loads with products" classname="ui/inventory.spec.ts" time="1.606">
+<system-out>
+<![CDATA[[2026-06-06 07:29:53] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:53] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:53] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:54] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted A-Z by default" classname="ui/inventory.spec.ts" time="1.944">
+<system-out>
+<![CDATA[[2026-06-06 07:29:53] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:53] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:53] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:54] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:54] [[32minfo[39m] Sorting products by: az
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted by price low-to-high" classname="ui/inventory.spec.ts" time="1.564">
+<system-out>
+<![CDATA[[2026-06-06 07:29:53] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:53] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:53] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:54] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:54] [[32minfo[39m] Sorting products by: lohi
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted by price high-to-low" classname="ui/inventory.spec.ts" time="1.44">
+<system-out>
+<![CDATA[[2026-06-06 07:29:53] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:53] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:54] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:54] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:54] [[32minfo[39m] Sorting products by: hilo
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @smoke - add item to cart updates badge count" classname="ui/inventory.spec.ts" time="1.674">
+<system-out>
+<![CDATA[[2026-06-06 07:29:54] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:54] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:55] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:55] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:55] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - add multiple items to cart" classname="ui/inventory.spec.ts" time="1.828">
+<system-out>
+<![CDATA[[2026-06-06 07:29:55] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:55] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:55] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:55] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:55] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:56] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - remove item from cart" classname="ui/inventory.spec.ts" time="1.801">
+<system-out>
+<![CDATA[[2026-06-06 07:29:55] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:55] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:55] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:56] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:56] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:29:56] [[32minfo[39m] Removing from cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - navigate to cart page" classname="ui/inventory.spec.ts" time="1.709">
+<system-out>
+<![CDATA[[2026-06-06 07:29:55] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:55] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:55] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:56] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:56] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @smoke - logout redirects to login page" classname="ui/inventory.spec.ts" time="2.354">
+<system-out>
+<![CDATA[[2026-06-06 07:29:56] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:29:56] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:57] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:57] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:29:58] [[32minfo[39m] Logged out successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="webkit" tests="6" failures="0" skipped="0" time="6.564" errors="0">
+<testcase name="Login Page › @smoke - login form is visible" classname="ui/login.spec.ts" time="0.996">
+<system-out>
+<![CDATA[[2026-06-06 07:29:56] [[32minfo[39m] Navigating to: /
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @smoke - successful login with standard user" classname="ui/login.spec.ts" time="1.227">
+<system-out>
+<![CDATA[[2026-06-06 07:29:56] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:57] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:57] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - locked user sees error message" classname="ui/login.spec.ts" time="1.2">
+<system-out>
+<![CDATA[[2026-06-06 07:29:57] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:57] [[32minfo[39m] Logging in as: locked_out_user
+[2026-06-06 07:29:57] [[32minfo[39m] Error message verified: Epic sadface: Sorry, this user has been locked out
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - invalid credentials shows error" classname="ui/login.spec.ts" time="1.103">
+<system-out>
+<![CDATA[[2026-06-06 07:29:57] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:58] [[32minfo[39m] Logging in as: invalid_user
+[2026-06-06 07:29:58] [[32minfo[39m] Error message verified: Epic sadface: Username and password do not match
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - empty username shows required error" classname="ui/login.spec.ts" time="1.045">
+<system-out>
+<![CDATA[[2026-06-06 07:29:58] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:58] [[32minfo[39m] Logging in as: 
+[2026-06-06 07:29:58] [[32minfo[39m] Error message verified: Epic sadface: Username is required
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - empty password shows required error" classname="ui/login.spec.ts" time="0.993">
+<system-out>
+<![CDATA[[2026-06-06 07:29:58] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:29:58] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:29:58] [[32minfo[39m] Error message verified: Epic sadface: Password is required
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/cart.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="mobile-chrome" tests="4" failures="0" skipped="0" time="10.594" errors="0">
+<testcase name="Cart Page › @smoke - cart displays added items" classname="ui/cart.spec.ts" time="2.4">
+<system-out>
+<![CDATA[[2026-06-06 07:30:02] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:02] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:02] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:03] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:03] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:30:03] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - cart item names are correct" classname="ui/cart.spec.ts" time="2.372">
+<system-out>
+<![CDATA[[2026-06-06 07:30:02] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:02] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:02] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:03] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:03] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:30:03] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - continue shopping returns to inventory" classname="ui/cart.spec.ts" time="2.89">
+<system-out>
+<![CDATA[[2026-06-06 07:30:02] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:02] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:02] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:03] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:03] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:30:03] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+[2026-06-06 07:30:03] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart Page › @regression - proceed to checkout navigates correctly" classname="ui/cart.spec.ts" time="2.932">
+<system-out>
+<![CDATA[[2026-06-06 07:30:02] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:02] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:02] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:03] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:03] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:30:03] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/inventory.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="mobile-chrome" tests="9" failures="0" skipped="0" time="16.431" errors="0">
+<testcase name="Inventory Page › @smoke - inventory page loads with products" classname="ui/inventory.spec.ts" time="1.564">
+<system-out>
+<![CDATA[[2026-06-06 07:30:04] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:04] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:04] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:05] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted A-Z by default" classname="ui/inventory.spec.ts" time="2.041">
+<system-out>
+<![CDATA[[2026-06-06 07:30:04] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:04] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:04] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:05] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:05] [[32minfo[39m] Sorting products by: az
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted by price low-to-high" classname="ui/inventory.spec.ts" time="1.589">
+<system-out>
+<![CDATA[[2026-06-06 07:30:04] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:04] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:05] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:05] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:05] [[32minfo[39m] Sorting products by: lohi
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - products sorted by price high-to-low" classname="ui/inventory.spec.ts" time="1.994">
+<system-out>
+<![CDATA[[2026-06-06 07:30:04] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:04] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:05] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:05] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:05] [[32minfo[39m] Sorting products by: hilo
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @smoke - add item to cart updates badge count" classname="ui/inventory.spec.ts" time="2.131">
+<system-out>
+<![CDATA[[2026-06-06 07:30:05] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:05] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:06] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:06] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:06] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - add multiple items to cart" classname="ui/inventory.spec.ts" time="1.512">
+<system-out>
+<![CDATA[[2026-06-06 07:30:06] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:06] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:06] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:07] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:07] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:30:07] [[32minfo[39m] Adding to cart: Sauce Labs Bike Light
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - remove item from cart" classname="ui/inventory.spec.ts" time="1.491">
+<system-out>
+<![CDATA[[2026-06-06 07:30:06] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:06] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:06] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:07] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:07] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+[2026-06-06 07:30:07] [[32minfo[39m] Removing from cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @regression - navigate to cart page" classname="ui/inventory.spec.ts" time="1.546">
+<system-out>
+<![CDATA[[2026-06-06 07:30:06] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:06] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:07] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:07] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:07] [[32minfo[39m] Adding to cart: Sauce Labs Backpack
+]]>
+</system-out>
+</testcase>
+<testcase name="Inventory Page › @smoke - logout redirects to login page" classname="ui/inventory.spec.ts" time="2.563">
+<system-out>
+<![CDATA[[2026-06-06 07:30:07] [[32minfo[39m] Setting up authenticated session
+[2026-06-06 07:30:07] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:08] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:08] [[32minfo[39m] Confirmed on inventory page
+[2026-06-06 07:30:09] [[32minfo[39m] Logged out successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="mobile-chrome" tests="6" failures="0" skipped="0" time="7.443" errors="0">
+<testcase name="Login Page › @smoke - login form is visible" classname="ui/login.spec.ts" time="1.092">
+<system-out>
+<![CDATA[[2026-06-06 07:30:07] [[32minfo[39m] Navigating to: /
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @smoke - successful login with standard user" classname="ui/login.spec.ts" time="1.373">
+<system-out>
+<![CDATA[[2026-06-06 07:30:07] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:08] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:08] [[32minfo[39m] Confirmed on inventory page
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - locked user sees error message" classname="ui/login.spec.ts" time="1.077">
+<system-out>
+<![CDATA[[2026-06-06 07:30:08] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:08] [[32minfo[39m] Logging in as: locked_out_user
+[2026-06-06 07:30:08] [[32minfo[39m] Error message verified: Epic sadface: Sorry, this user has been locked out
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - invalid credentials shows error" classname="ui/login.spec.ts" time="1.402">
+<system-out>
+<![CDATA[[2026-06-06 07:30:08] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:09] [[32minfo[39m] Logging in as: invalid_user
+[2026-06-06 07:30:09] [[32minfo[39m] Error message verified: Epic sadface: Username and password do not match
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - empty username shows required error" classname="ui/login.spec.ts" time="1.171">
+<system-out>
+<![CDATA[[2026-06-06 07:30:09] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:09] [[32minfo[39m] Logging in as: 
+[2026-06-06 07:30:10] [[32minfo[39m] Error message verified: Epic sadface: Username is required
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Page › @regression - empty password shows required error" classname="ui/login.spec.ts" time="1.328">
+<system-out>
+<![CDATA[[2026-06-06 07:30:09] [[32minfo[39m] Navigating to: /
+[2026-06-06 07:30:09] [[32minfo[39m] Logging in as: standard_user
+[2026-06-06 07:30:10] [[32minfo[39m] Error message verified: Epic sadface: Password is required
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="api/auth.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="api" tests="7" failures="0" skipped="0" time="3.744" errors="0">
+<testcase name="Authentication API › @smoke - POST /auth/login returns token for valid credentials" classname="api/auth.spec.ts" time="0.777">
+<system-out>
+<![CDATA[[2026-06-06 07:30:10] [[32minfo[39m] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 07:30:11] [[32minfo[39m] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication API › @smoke - login response includes user details" classname="api/auth.spec.ts" time="0.76">
+<system-out>
+<![CDATA[[2026-06-06 07:30:10] [[32minfo[39m] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 07:30:11] [[32minfo[39m] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication API › @regression - login with invalid credentials returns 400" classname="api/auth.spec.ts" time="0.783">
+<system-out>
+<![CDATA[[2026-06-06 07:30:10] [[32minfo[39m] POST https://dummyjson.com/auth/login — body: {"username":"nonexistent_user","password":"wrong_password"}
+[2026-06-06 07:30:11] [[32minfo[39m] Response [400]: {"message":"Invalid credentials"}
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication API › @regression - login response includes refresh token" classname="api/auth.spec.ts" time="0.709">
+<system-out>
+<![CDATA[[2026-06-06 07:30:11] [[32minfo[39m] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 07:30:11] [[32minfo[39m] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication API › @regression - login response headers include content-type json" classname="api/auth.spec.ts" time="0.178">
+<system-out>
+<![CDATA[[2026-06-06 07:30:11] [[32minfo[39m] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 07:30:11] [[32minfo[39m] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication API › @regression - token from login can authenticate subsequent request" classname="api/auth.spec.ts" time="0.341">
+<system-out>
+<![CDATA[[2026-06-06 07:30:11] [[32minfo[39m] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass"}
+[2026-06-06 07:30:11] [[32minfo[39m] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication API › @regression - login with custom token expiry" classname="api/auth.spec.ts" time="0.196">
+<system-out>
+<![CDATA[[2026-06-06 07:30:11] [[32minfo[39m] POST https://dummyjson.com/auth/login — body: {"username":"emilys","password":"emilyspass","expiresInMins":60}
+[2026-06-06 07:30:11] [[32minfo[39m] Response [200]: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJ
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="api/users.spec.ts" timestamp="2026-06-06T11:29:13.725Z" hostname="api" tests="11" failures="0" skipped="0" time="1.75" errors="0">
+<testcase name="Users API › @smoke - GET /users returns paginated user list" classname="api/users.spec.ts" time="0.172">
+<system-out>
+<![CDATA[[2026-06-06 07:30:12] [[32minfo[39m] GET https://dummyjson.com/users
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @regression - GET /users pagination - skip works correctly" classname="api/users.spec.ts" time="0.232">
+<system-out>
+<![CDATA[[2026-06-06 07:30:12] [[32minfo[39m] GET https://dummyjson.com/users
+[2026-06-06 07:30:12] [[32minfo[39m] GET https://dummyjson.com/users
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"users":[{"id":6,"firstName":"Olivia","lastName":"Wilson","maidenName":"","age":23,"gender":"female","email":"olivia.wilson@x.dummyjson.com","phone":"+91 607-295-6448","username":"oliviaw","password"
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @smoke - GET /users/:id returns a single user" classname="api/users.spec.ts" time="0.158">
+<system-out>
+<![CDATA[[2026-06-06 07:30:12] [[32minfo[39m] GET https://dummyjson.com/users/1
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @regression - GET /users/:id - user not found returns 404" classname="api/users.spec.ts" time="0.148">
+<system-out>
+<![CDATA[[2026-06-06 07:30:12] [[32minfo[39m] GET https://dummyjson.com/users/0
+[2026-06-06 07:30:13] [[32minfo[39m] Response [404]: {"message":"User with id '0' not found"}
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @regression - GET /users/search returns matching users" classname="api/users.spec.ts" time="0.152">
+<system-out>
+<![CDATA[[2026-06-06 07:30:13] [[32minfo[39m] GET https://dummyjson.com/users/search
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @smoke - POST /users/add creates a new user" classname="api/users.spec.ts" time="0.153">
+<system-out>
+<![CDATA[[2026-06-06 07:30:13] [[32minfo[39m] POST https://dummyjson.com/users/add — body: {"firstName":"Gilda","lastName":"Hilll"}
+[2026-06-06 07:30:13] [[32minfo[39m] Response [201]: {"id":209,"firstName":"Gilda","lastName":"Hilll","maidenName":"","age":null,"gender":"","email":"","phone":"","username":"","password":"","birthDate":"","image":"","bloodGroup":"","height":null,"weigh
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @regression - PUT /users/:id updates user fully" classname="api/users.spec.ts" time="0.146">
+<system-out>
+<![CDATA[[2026-06-06 07:30:13] [[32minfo[39m] PUT https://dummyjson.com/users/1
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"id":1,"firstName":"Updated","lastName":"Testuser","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"e
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @regression - PATCH /users/:id partial update" classname="api/users.spec.ts" time="0.142">
+<system-out>
+<![CDATA[[2026-06-06 07:30:13] [[32minfo[39m] PATCH https://dummyjson.com/users/1
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"id":1,"firstName":"Patched","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"em
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @regression - DELETE /users/:id returns 200 with isDeleted flag" classname="api/users.spec.ts" time="0.15">
+<system-out>
+<![CDATA[[2026-06-06 07:30:13] [[32minfo[39m] DELETE https://dummyjson.com/users/1
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @regression - user object schema is valid" classname="api/users.spec.ts" time="0.143">
+<system-out>
+<![CDATA[[2026-06-06 07:30:13] [[32minfo[39m] GET https://dummyjson.com/users/1
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","password":"emil
+]]>
+</system-out>
+</testcase>
+<testcase name="Users API › @regression - limit parameter controls page size" classname="api/users.spec.ts" time="0.154">
+<system-out>
+<![CDATA[[2026-06-06 07:30:13] [[32minfo[39m] GET https://dummyjson.com/users
+[2026-06-06 07:30:13] [[32minfo[39m] Response [200]: {"users":[{"id":1,"firstName":"Emily","lastName":"Johnson","maidenName":"Smith","age":29,"gender":"female","email":"emily.johnson@x.dummyjson.com","phone":"+81 965-431-3024","username":"emilys","passw
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

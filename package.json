@@ -1,10 +1,38 @@
 {
+  "name": "playwright-ts-framework",
+  "version": "1.0.0",
+  "description": "Enterprise Playwright TypeScript Test Automation Framework",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --project=chromium tests/ui/",
+    "test:api": "playwright test tests/api/",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report reports/playwright-report",
+    "allure:generate": "allure generate reports/allure-results -o reports/allure-report --clean",
+    "allure:open": "allure open reports/allure-report",
+    "allure:serve": "allure serve reports/allure-results",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf reports node_modules/.cache"
+  },
   "dependencies": {
-    "playwright": "^1.60.0"
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.1"
-  },
-  "scripts": {}
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.0",
+    "allure-playwright": "^3.0.0",
+    "allure-commandline": "^2.29.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.4.0",
+    "winston": "^3.13.0",
+    "@faker-js/faker": "^8.4.0"
+  }
 }
