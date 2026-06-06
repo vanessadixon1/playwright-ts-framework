@@ -1,3 +1,0 @@
-[2026-06-06 12:28:53] [info] Navigating to: /
-[2026-06-06 12:28:54] [info] Logging in as: standard_user
-[2026-06-06 12:28:55] [info] Confirmed on inventory page

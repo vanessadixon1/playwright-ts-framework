@@ -1,3 +1,0 @@
-[2026-06-06 12:28:43] [info] Navigating to: /
-[2026-06-06 12:28:43] [info] Logging in as: invalid_user
-[2026-06-06 12:28:44] [info] Error message verified: Epic sadface: Username and password do not match
